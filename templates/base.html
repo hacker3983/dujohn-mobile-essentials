@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Dujohn Mobile Essentials | DME">
+    <meta property="og:description" content="Quality mobile essentials, accessories, and professional device repairs across Jamaica.">
+    <meta property="og:type" content="website">
+   <meta property="og:image" content="{{ request.url_for('static', path='images/dme-logo.png') }}"> 
+    <link rel="icon" type="image/png" href="{{ url_for('static', path='images/dme-logo.png') }}">
+    <title>Dujohn Mobile Essentials | DME</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', path='css/style.css') }}">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar">
+
+            <a href="/" class="brand">
+		    <!--DME-->
+		    <img src="{{ url_for('static', path='images/dme-logo.png') }}" alt="Dujohn Mobile Essentials">
+            </a>
+
+            <div class="nav-links" id="navLinks">
+                <a href="/">Home</a>
+                <a href="/shop">Shop</a>
+                <a href="/repairs">Repairs</a>
+                <a href="/about">About</a>
+		<a href="/account" class="mobile-account">Account</a>
+            </div>
+
+            <div class="nav-actions">
+                <a href="/account" class="account-link">Account</a>
+		<button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation menu" aria-expanded="false">
+			&#9776;
+		</button>
+	    </div>
+        </nav>
+    </header>
+
+    <main>
+    <section class="hero">
+        <div class="hero-content">
+
+            <p class="hero-eyebrow">DUJOHN MOBILE ESSENTIALS</p>
+
+	    <h1 class="hero-title">
+		    <span id="typingText"></span>
+		    <span class="typing-cursor">|</span>
+	    </h1>
+
+            <p class="hero-description">
+                Quality mobile essentials, accessories, and professional
+                device repairs — built for convenience across Jamaica.
+            </p>
+
+            <div class="hero-actions">
+                <a href="/shop" class="hero-button primary-button">
+                    Shop Now
+                </a>
+
+                <a href="/repairs" class="hero-button secondary-button">
+                    Explore Repairs
+                </a>
+            </div>
+
+        </div>
+    </section>
+    <section class="intro-section">
+	<div class="intro-content">
+	   <p class="section-eyebrow">WHY DME</p>
+	   <h2>Mobile essentials. Repairs. Convenience.</h2>
+	   <p>Dujohn Mobile Essentials provides quality mobile accessories,
+            essential products, and professional device repairs — all
+            designed to make taking care of your devices easier.
+        </p>
+    	</div>
+    </section>
+    </main>
+
+    <script src="{{ url_for('static', path='js/main.js') }}"></script>
+
+</body>
+</html>
